@@ -1,4 +1,4 @@
-## YOUTH TOBACCO SMOKE EXPOSURE IN INDIA
+## YOUTH TOBACCO EXPOSURE IN INDIA
 ### Exploratory & Regressional Data Analysis using Python
 
 ### OVERVIEW
