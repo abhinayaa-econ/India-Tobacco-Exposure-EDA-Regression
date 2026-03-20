@@ -1,10 +1,10 @@
-# Youth Tobacco Smoke Exposure Across India
+## YOUTH TOBACCO SMOKE EXPOSURE IN INDIA
 ## Exploratory & Regressional Data Analysis using Python
 
-## Overview
+## OVERVIEW
 This notebook explores the state-level patterns in youth exposure to tobacco and examines how education, geographical location, awareness and policy enforcement affect exposure outcomes. The target group is school-going youth below the age of 18.
 
-## Data
+## DATA
 - **Unit of analysis:** Indian states
 - **Nature:** Cross-sectional, state-level aggregated data
 - **Dependent variable:** Tobacco smoke exposure (%) among youth
@@ -12,19 +12,19 @@ This notebook explores the state-level patterns in youth exposure to tobacco and
 > Raw data files are not uploaded due to licensing restrictions.
 > Variable construction and cleaning logic are documented in the notebook.
 
-## Research Questions:
+### RESEARCH QUESTIONS:
 1. Are urban students more exposed to second-hand smoke than rural students?
 2. Is anti-tobacco education associated with support for smoking bans?
 3. Does policy enforcement (COTPA - Cigarettes & Other Tobacco Products Act) correlate with reduced exposure?
 4. Is geographical location associated with different levels of smoke exposure?
 
-## Methodology
+### METHODOLOGY
 - Regional grouping and comparative distributional analysis
 - Bar charts with overlaid state-level dot plots to capture within-group variation
 - Reference line benchmarking against national mean
 - Assessment of within-group vs. between-group variance to evaluate the robustness of predictors
 
-## Key Findings
+### KEY FINDINGS
 
 ### RQ1: Urban Vs Rural Exposure
 Do urban students experience higher tobacco smoke exposure than rural students?
