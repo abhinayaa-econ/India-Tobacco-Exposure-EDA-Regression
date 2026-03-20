@@ -1,5 +1,5 @@
 ## YOUTH TOBACCO EXPOSURE IN INDIA
-### Exploratory & Regressional Data Analysis using Python
+### Exploratory & Regression Data Analysis using Python
 
 ### OVERVIEW
 Youth tobacco exposure among school-going adolescents below the legal age of 18 remains a critical public health concern, with substantial variation across regions and socio-economic contexts. This notebook explores the state-level patterns in youth exposure to tobacco and examines how anti-tobacco education, geographical location, awareness and policy enforcement affect exposure outcomes.
