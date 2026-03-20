@@ -111,3 +111,12 @@ There is potential to develop this project by 2 extensions which would substanti
 1. **Difference-in-Differences (DiD) design** by introducing stricter enforcement in cold states as a treatment group and comparing exposure trends against a control group would allow causal identification of enforcement effectiveness in high-risk regions. 
 2. **Time series analysis** using multiple yearly datasets of the GYTS survey would allow examination of whether youth tobacco exposure has increased or decreased over time and whether policy changes explain these trends. 
 
+### CODES
+The analysis is fully reproducible using the following Python notebook:
+
+- [`EDA.ipynb`](https://github.com/abhinayaa-econ/India-Smoke-Exposure-EDA-Regression/blob/main/code/EDA.ipynb) – Exploratory data analysis, regression analysis and visualisations.
+  
+### AUTHOR
+Abhinayaa Kumar Subramanian
+MSc in Applied Economics
+National UNiversity of Singapore
