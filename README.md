@@ -2,9 +2,10 @@
 ### Exploratory & Regressional Data Analysis using Python
 
 ### OVERVIEW
-This notebook explores the state-level patterns in youth exposure to tobacco and examines how education, geographical location, awareness and policy enforcement affect exposure outcomes. The target group is school-going youth below the age of 18.
+Youth tobacco exposure among school-going adolescents below the legal age of 18 remains a critical public health concern, with substantial variation across regions and socio-economic contexts. This notebook explores the state-level patterns in youth exposure to tobacco and examines how anti-tobacco education, geographical location, awareness and policy enforcement affect exposure outcomes.
 
 ### DATA
+- **Dataset:** 
 - **Unit of analysis:** Indian states
 - **Nature:** Cross-sectional, state-level aggregated data
 - **Dependent variable:** Tobacco smoke exposure (%) among youth
