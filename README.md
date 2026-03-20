@@ -29,7 +29,7 @@ This notebook explores the state-level patterns in youth exposure to tobacco and
 ### RQ1: Urban Vs Rural Exposure
 Do urban students experience higher tobacco smoke exposure than rural students?
 
-<img src="output/figures/Smoke exposure grouped by Area.png" width="450">
+<img src="output/figures/Smoke exposure grouped by Area.png" width="350">
 
 ### Interpretation
 From the boxplot, urban areas show higher median tobacco exposure and greater upper tail dispersion compared to rural areas, suggesting higher average exposure along with more extreme outliers. 
@@ -39,7 +39,7 @@ However, while urban areas show higher exposure than rural areas descriptively, 
 ### RQ2: Education Vs Support for Ban
 Is anti-tobacco education associated with support for smoking bans?
 
-<img src="output/figures/Anti-tobacco Edu vs Ban Support" width="450">
+<img src="output/figures/Anti-tobacco Edu vs Ban Support.png" width="450">
 
 ### Interpretation
 The relationship between anti-tobacco school education and support for banning tobacco is positive (correlation = 0.32) in both rural and urban areas. However, the slope coefficient of the regression is higher for rural areas than urban areas, suggesting that education may more strongly translate into pro-ban support for tobacco in rural areas. 
@@ -49,7 +49,7 @@ However, the fitted regression line only suggests correlation and no causaul inf
 ### RQ3: 
 Does policy enforcement (COTPA) correlate with reduced exposure?¶
 
-<img src="output/figures/Smoke exposure vs Enforcement" width="450">
+<img src="output/figures/Smoke exposure vs Enforcement.png" width="450">
 
 ### Interpretation
 It is evident that smoke exposure is "higher" in high enforcement areas(42.71%) than in low enforcement areas (34.99%). This is counterintuitive as in enforcement policies are more reactive than preventive, as seen from the positive slope of the regression plot between the variables. 
