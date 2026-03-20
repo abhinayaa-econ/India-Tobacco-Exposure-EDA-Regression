@@ -1,10 +1,10 @@
 ## YOUTH TOBACCO SMOKE EXPOSURE IN INDIA
-## Exploratory & Regressional Data Analysis using Python
+### Exploratory & Regressional Data Analysis using Python
 
-## OVERVIEW
+### OVERVIEW
 This notebook explores the state-level patterns in youth exposure to tobacco and examines how education, geographical location, awareness and policy enforcement affect exposure outcomes. The target group is school-going youth below the age of 18.
 
-## DATA
+### DATA
 - **Unit of analysis:** Indian states
 - **Nature:** Cross-sectional, state-level aggregated data
 - **Dependent variable:** Tobacco smoke exposure (%) among youth
