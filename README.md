@@ -29,7 +29,7 @@ This notebook explores the state-level patterns in youth exposure to tobacco and
 ### RQ1: Urban Vs Rural Exposure
 Do urban students experience higher tobacco smoke exposure than rural students?
 
-<img src="output/figures/Smoke exposure grouped by Area" width="450">
+<img src="output/figures/Smoke exposure grouped by Area.png" width="450">
 
 ### Interpretation
 From the boxplot, urban areas show higher median tobacco exposure and greater upper tail dispersion compared to rural areas, suggesting higher average exposure along with more extreme outliers. 
@@ -76,15 +76,38 @@ However, there is considerable overlap in individual state exposures across the 
 The descriptive statistics identify 4 important predictors - Education, Enforcement, Cold/Non-cold States and Urban/Rural areas of states. The following regression analysis aims to study the isolated associations of these predictors with tobacco smoke exposure, controlling for any confounding between them.
 
 ### REGRESSION ANALYSIS
+**Variable selection for the regression**
+The selected variables of the regression give an R² of 0.48 exlaining about 48% of the total variation in the data. The variable "% of health warnings on tobacco" (correlation with "% taught about harmful affects" = 0.78) is not included in the model due to multicollinearity. Although it inflates the R² of the model to 0.68, it renders all other included variables statistically insignificant and causes the problem of a single dominant predictor crowding out other predictors. 
 
+Hence, the final model includes the predictors "region" dummy, "% taught about harmful effects", "% of COTPA enforcement" and "urban-rural" dummy, all lower-correlated variables that each play a distinct role in the analysis.
 
+<img src="output/figures/Regression Output.png" width="450">
 
+### Interpretation:
 
+The OLS regression analysis (R² = 0.48 and F-statistic p<0.001) identifies "Regional Location" as the strongest predictor of tobacco exposure.
 
+1. North-eastern states are associated with 22.44 pp higher exposure than the rest of India (reference category), controlling for all other factors - the single most statistically significant perdictor of this analysis. Northern states show 7.96pp lower exposure (p=0.066) than the rest of India. 
+2. Anti-tobacco education shows a positive association with exposure (coeff=0.22, p=0.190), this is probably because of "Reverse Causality" i.e high exposure states respond with more education, rather than education reducing exposure. 
+3. The COTPA enforcement has a statistically insignificant relationship with smoke exposure (p=0.767), this is probably because enforcement is more reactive than preventive.
+4. The urban-rural dummy variable loses its significance (p=0.403), when controlled for other variables; this suggests that the urban-rural gap in smoke exposure comes from other hidden factors rather than urbanisation istelf. 
 
+### SUMMARY 
+This analysis examined state-level patterns in youth tobacco smoke exposure across India using the Global Youth Tobacco Survey (2019). Across four research questions and a multivariate OLS regression, regional location classification emerged as the only statistically significant predictor of exposure (p<0.001), with north-eastern states on average having 22.4pp higher exposure than other states of India after controlling for education, enforcement and urbanisation. The factors underlying this association, whether cultural, behavioural or environmental, cannot be determined from our current cross-sectional data alone and require further investigation. COTPA enforcement and anti-tobacco education both show counterintuitive positive associations with exposure, consistent with being reactive rather than preventive policy implementations. The urban-rural gap observed descriptively loses significance once other factors are controlled for.
 
+### POLICY IMPLICATIONS
+1. **Geographic targetting of interventions** - North eastern states show 22.4pp higher exposure than national baselines, even after controlling for education and enforcement. Thus anti-tobacco campaigns and budgets should prioritise this region, with interventions tailored to the cultural and climatic differences in this region, rather than using a uniform policy framework.
+2. **Shift enforcement from reactive to preventive** - Enforcement is currently only penalising violations, but policy should shift towards youth-based preventing measures like smoke-free zones in public places and proactive monitoring by concerned authorities.
+3. **Eliminating reverse causality in education** - Anti-tobacco education is positively associated with exposure i.e level of exposure determines education. But education should not just be focused on high exposure areas and should also cover lower exposure areas to prevent exposure levels from rising in the future.
+4. **Adapting variations of baseline frameworks** - Northern states(−7.96pp, p=0.066) show lower exposure than national baseline. Hence, policies implemented in these regions can be studied to understand why they work better here than the rest of te country after controlling for all other cultural, social and bahavioural factors. Once understood, variations of these policies could be enforced in the other regions to ensure higher effectiveness and adaptability. 
 
+### LIMITATIONS
+1. This analysis is based on a cross-sectional dataset and hence associations between the variables cannot be interpreted as causal relationships. 
+2. "Omitted Variable Bias" is a concern as variables such as peer pressure, social preferences, parental behaviour, income etc. are not available in the data, likely explaining the remaining variance (R² = 0.48) of the dataset. 
+3. The regional classification - North, North-east, Rest of India is a simplified grouping based on zonal councils and treats all states within a group as homogenous. In reality, there is substantial within-group variation with individual exposures overlapping across regions. Also, the Rest of India group is a heterogenous category, combining Southern, Central and Western states which may have different exposure patterns that this analysis does not reflect. 
 
-
-
+### FUTURE RESEARCH
+There is potential to develop this project by 2 extensions which would substantially strengthen the findings of this analysis. 
+1. **Difference-in-Differences (DiD) design** by introducing stricter enforcement in cold states as a treatment group and comparing exposure trends against a control group would allow causal identification of enforcement effectiveness in high-risk regions. 
+2. **Time series analysis** using multiple yearly datasets of the GYTS survey would allow examination of whether youth tobacco exposure has increased or decreased over time and whether policy changes explain these trends. 
 
